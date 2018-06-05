@@ -13,6 +13,7 @@ class Anagram
     array =[]
     candidate.each do
       |x|
+      binding.pry
       if x.length != self.word.length
       #  binding.pry
         candidate.delete(x)
