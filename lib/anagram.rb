@@ -8,11 +8,13 @@ class Anagram
 
   def match(otherword)
     candidate = otherword.split(/\s/)
-    candidate.map do{|x|
+    candidate.map do{
+      |x|
       if x.length != self.word.length
         candidate.delete(x)
       elsif x.split("").sort == self.word.split("").sort
         yield x
+      else
       end
     }
   end
