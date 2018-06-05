@@ -21,5 +21,6 @@ class Anagram
       else
       end
     end
+    array
   end
 end
