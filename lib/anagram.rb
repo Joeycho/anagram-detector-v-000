@@ -8,7 +8,7 @@ class Anagram
 
   def match(otherword)
     candidate = otherword.split(/\s/)
-    candidate.map do{
+    candidate.map do
       |x|
       if x.length != self.word.length
         candidate.delete(x)
@@ -16,6 +16,6 @@ class Anagram
         yield x
       else
       end
-    }
+    
   end
 end
