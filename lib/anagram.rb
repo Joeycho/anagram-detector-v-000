@@ -13,10 +13,10 @@ class Anagram
     array =[]
     candidate.each do
       |x|
-    binding.pry
+  #  binding.pry
       if x.length != self.word.length
       #  binding.pry
-        candidate.delete(x)
+        #candidate.delete(x)
       elsif x.split("").sort == self.word.split("").sort
         array << x
       else
