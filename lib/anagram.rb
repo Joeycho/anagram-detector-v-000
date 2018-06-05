@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(otherword)
-    binding.pry
+  #  binding.pry
     candidate = otherword
     candidate.map do
       |x|
