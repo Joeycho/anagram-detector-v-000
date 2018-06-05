@@ -10,15 +10,14 @@ class Anagram
   def match(otherword)
   #  binding.pry
     candidate = otherword
-    candidate.map do{
+    candidate.map do
       |x|
       if x.length != self.word.length
         candidate.delete(x)
       elsif x.split("").sort == self.word.split("").sort
-        yield x
+        x
       else
       end
-      }
     end
   end
 end
