@@ -1,3 +1,4 @@
+require 'pry'
 # Your code goes here!
 class Anagram
   attr_accessor :word
@@ -7,6 +8,7 @@ class Anagram
   end
 
   def match(otherword)
+    binding.pry
     candidate = otherword.split(/\s/)
     candidate.map do
       |x|
