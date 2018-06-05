@@ -20,7 +20,6 @@ class Anagram
       elsif x.split("").sort == self.word.split("").sort
         array << x
       else
-        puts("HERE")
       end
     end
     array
