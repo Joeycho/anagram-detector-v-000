@@ -10,7 +10,7 @@ class Anagram
   def match(otherword)
   #  binding.pry
     candidate = otherword
-    candidate.map do
+    candidate.map do{
       |x|
       if x.length != self.word.length
         candidate.delete(x)
@@ -18,6 +18,7 @@ class Anagram
         yield x
       else
       end
+      }
     end
   end
 end
