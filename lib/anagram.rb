@@ -10,7 +10,7 @@ class Anagram
   def match(otherword)
   #  binding.pry
     candidate = otherword
-    candidate.map do
+    candidate.each do
       |x|
       if x.length != self.word.length
       #  binding.pry
