@@ -13,7 +13,7 @@ class Anagram
     candidate.map do
       |x|
       if x.length != self.word.length
-        binding.pry
+      #  binding.pry
         candidate.delete(x)
       elsif x.split("").sort == self.word.split("").sort
         x
