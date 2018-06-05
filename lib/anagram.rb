@@ -16,6 +16,6 @@ class Anagram
         yield x
       else
       end
-    
+    end
   end
 end
